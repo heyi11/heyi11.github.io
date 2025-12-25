@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三的个人主页 | San Zhang</title>
+    <title>Yi He</title>
     <!-- 引入 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 React 和 Babel (用于在浏览器中解析 JSX) -->
@@ -33,24 +33,54 @@
 
         const DATA = {
             profile: {
-                name: "张三 (San Zhang)",
-                title: "计算机科学博士生",
-                institution: "清华大学 / AI 实验室",
-                location: "中国, 北京",
-                email: "san.zhang@email.edu",
+                name: "何一 (Yi He)",
+                title: "设计（工）学博士生",
+                institution: "Intelligent Big Data Visualization Lab, College of Design and Innovation, Tongji University",
+                location: "Shanghai, China",
+                email: "heyi.hy11 @gmail.com",
                 avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400", 
-                scholar: "https://scholar.google.com",
+                scholar: "https://scholar.google.com/citations?user=NC_b_pUAAAAJ&hl=zh-CN",
                 github: "https://github.com",
                 twitter: "https://twitter.com",
-                interests: ["计算机视觉", "生成艺术", "多模态学习", "人机交互"]
+                interests: ["Computational Creativity", "Narrative Design", "Agent Design"]
             },
             news: [
-                { date: "2024.12", content: "🎉 论文 'Creative AI' 被 CVPR 2025 接收！" },
-                { date: "2024.10", content: "📍 参加了在温哥华举办的 NeurIPS 2024 会议。" },
-                { date: "2024.08", content: "🏢 开始在 Adobe Research 进行夏季实习。" },
+                { date: "2025.10", content: "🎉 Our paper on affective image generation was accepted to ICCV 2025!" },
+                { date: "2025.07", content: "📍 Gave a public talk at ChinaVis" },
+                { date: "2025.02", content: "🏢 My paper on creating narrative visualizations with foundation models was accepted to IEEE TVCG!" },
             ],
             publications: [
                 {
+                    id: 1,
+                    title: "Generative Models for Stylized Image Synthesis",
+                    authors: "San Zhang, John Doe, Jane Smith",
+                    venue: "CVPR 2025",
+                    tags: ["Highlight", "Oral"],
+                    bibtex: "@inproceedings{zhang2025...}",
+                    links: { Paper: "#", Code: "#", Demo: "#" },
+                    image: "https://images.unsplash.com/photo-1620712943543-bcc4628c9757?auto=format&fit=crop&w=300&h=200"
+                },
+                  {
+                    id: 1,
+                    title: "Generative Models for Stylized Image Synthesis",
+                    authors: "San Zhang, John Doe, Jane Smith",
+                    venue: "CVPR 2025",
+                    tags: ["Highlight", "Oral"],
+                    bibtex: "@inproceedings{zhang2025...}",
+                    links: { Paper: "#", Code: "#", Demo: "#" },
+                    image: "https://images.unsplash.com/photo-1620712943543-bcc4628c9757?auto=format&fit=crop&w=300&h=200"
+                },
+                  {
+                    id: 1,
+                    title: "Generative Models for Stylized Image Synthesis",
+                    authors: "San Zhang, John Doe, Jane Smith",
+                    venue: "CVPR 2025",
+                    tags: ["Highlight", "Oral"],
+                    bibtex: "@inproceedings{zhang2025...}",
+                    links: { Paper: "#", Code: "#", Demo: "#" },
+                    image: "https://images.unsplash.com/photo-1620712943543-bcc4628c9757?auto=format&fit=crop&w=300&h=200"
+                }.
+                  {
                     id: 1,
                     title: "Generative Models for Stylized Image Synthesis",
                     authors: "San Zhang, John Doe, Jane Smith",
@@ -117,7 +147,7 @@
                                     </div>
                                 </div>
                                 <p className="text-lg leading-relaxed text-slate-600">
-                                    欢迎来到我的主页！我专注于人工智能与创意设计的交叉研究。如果你对我的工作感兴趣，欢迎通过邮件与我交流。
+                                    Welcome to my homepage! I focus on research at the intersection of AI and creative design. If you're interested in my work, feel free to reach out via email.
                                 </p>
                                 <div className="flex flex-wrap gap-2 pt-2">
                                     {DATA.profile.interests.map(item => (
@@ -131,7 +161,7 @@
                         <section id="news" className="scroll-mt-24">
                             <h2 className="text-2xl font-bold flex items-center gap-2 mb-8">
                                 <span className="w-8 h-8 bg-purple-50 text-purple-500 rounded-xl flex items-center justify-center shadow-inner">✨</span>
-                                最新动态
+                                News
                             </h2>
                             <div className="bg-white/50 rounded-2xl border border-purple-100 backdrop-blur-sm overflow-hidden shadow-sm">
                                 <div className="divide-y divide-purple-50">
@@ -149,7 +179,7 @@
                         <section id="publications" className="scroll-mt-24">
                             <h2 className="text-2xl font-bold flex items-center gap-2 mb-8">
                                 <span className="w-8 h-8 bg-pink-50 text-pink-500 rounded-xl flex items-center justify-center shadow-inner">📖</span>
-                                精选论文
+                                Publications
                             </h2>
                             <div className="space-y-10">
                                 {DATA.publications.map(pub => (
